@@ -23,6 +23,7 @@
         <button class="swatch" data-theme="dark" aria-label="Midnight theme" aria-pressed="false" style="--swatch:#27334f"></button>
       </div>
       <div class="auth-card" id="authCard">
+        <div class="motion-progress" aria-hidden="true"><span></span></div>
         <div class="form-pane signup-pane">
           <form id="signupForm">
             <div class="eyebrow">START YOUR JOURNEY</div>
@@ -54,19 +55,19 @@
         <div class="overlay-shell" aria-hidden="true">
           <div class="overlay-track">
             <div class="overlay-content overlay-left">
-              <div class="orb orb-one"></div><div class="sparkle">✳</div>
+              <div class="orb orb-one"></div><div class="sparkle">✳</div><div class="floating-shape shape-a">✦</div><div class="floating-shape shape-b">✧</div><div class="glass-chip chip-a"><span class="chip-icon">✧</span><span>Welcome home<br><small>Let's get creative</small></span></div>
               <div class="overlay-text"><span class="pill">✦ YOUR NEXT CHAPTER</span><h2>Already part<br />of the crew?</h2><p>Your creative space is waiting. Jump right back in.</p><button type="button" class="outline-btn" data-switch="signin" tabindex="-1">Sign in <span>→</span></button></div>
               <span class="panel-footer">DESIGNED TO INSPIRE ✦</span>
             </div>
             <div class="overlay-content overlay-right">
-              <div class="orb orb-two"></div><div class="sparkle">✳</div>
+              <div class="orb orb-two"></div><div class="sparkle">✳</div><div class="floating-shape shape-a">✦</div><div class="floating-shape shape-b">✧</div><div class="glass-chip chip-b"><span class="chip-icon">↗</span><span>New beginnings<br><small>Start something great</small></span></div>
               <div class="overlay-text"><span class="pill">✦ SOMETHING GOOD STARTS HERE</span><h2>New around<br />here?</h2><p>Join the space where great ideas come to life.</p><button type="button" class="outline-btn" data-switch="signup">Create account <span>→</span></button></div>
               <span class="panel-footer">MADE FOR THE CURIOUS ✦</span>
             </div>
           </div>
         </div>
       </div>
-      <p class="bottom-note">Made with intention. Built for what's next. ✦</p>
+      <div class="step-indicator" aria-label="Current view"><span class="step-dot current"></span><span class="step-dot"></span></div><p class="bottom-note">Made with intention. Built for what's next. ✦</p>
       <div class="toast" id="toast" role="status" aria-live="polite"></div>
     </section>
   </main>

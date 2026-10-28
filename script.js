@@ -12,6 +12,8 @@ function notify(message) {
 function setMode(mode) {
   const signup = mode === 'signup';
   card.classList.toggle('signup-mode', signup);
+  document.querySelectorAll('.step-dot').forEach((dot,i)=>dot.classList.toggle('current',i === (signup ? 1 : 0)));
+  document.title = (signup ? 'Create account' : 'Sign in') + ' — Zorblix';
   document.querySelectorAll('.overlay-content button').forEach(button => {
     button.tabIndex = signup ? (button.closest('.overlay-left') ? 0 : -1) : (button.closest('.overlay-right') ? 0 : -1);
   });
