@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zorblix — Welcome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="topbar"><a class="brand" href="#">✦ <span>zorblix</span></a><span class="top-caption">Your space to create.</span></header>
+    <section class="auth-wrap" aria-label="Account access">
+      <div class="theme-picker" aria-label="Choose accent color">
+        <span>Theme</span>
+        <button class="swatch active" data-theme="violet" aria-label="Violet theme" aria-pressed="true" style="--swatch:#7354e8"></button>
+        <button class="swatch" data-theme="blue" aria-label="Blue theme" aria-pressed="false" style="--swatch:#2875ed"></button>
+        <button class="swatch" data-theme="pink" aria-label="Pink theme" aria-pressed="false" style="--swatch:#e64d9a"></button>
+        <button class="swatch" data-theme="green" aria-label="Green theme" aria-pressed="false" style="--swatch:#169d80"></button>
+        <button class="swatch" data-theme="orange" aria-label="Orange theme" aria-pressed="false" style="--swatch:#ef7c37"></button>
+        <button class="swatch" data-theme="dark" aria-label="Midnight theme" aria-pressed="false" style="--swatch:#27334f"></button>
+      </div>
+      <div class="auth-card" id="authCard">
+        <div class="form-pane signup-pane">
+          <form id="signupForm">
+            <div class="eyebrow">START YOUR JOURNEY</div>
+            <h1>Create account<span class="dot">.</span></h1>
+            <p class="subtitle">A few details and you're all set.</p>
+            <label for="signupName">Full name</label>
+            <input id="signupName" name="name" type="text" autocomplete="name" placeholder="Your name" required minlength="2" />
+            <label for="signupEmail">Email address</label>
+            <input id="signupEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <label for="signupPassword">Password</label>
+            <div class="password-field"><input id="signupPassword" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" required minlength="8" /><button class="show-password" type="button" data-for="signupPassword" aria-label="Show password">Show</button></div>
+            <button class="primary-btn" type="submit">Create account <span>↗</span></button>
+            <p class="mobile-switch">Already have an account? <button type="button" data-switch="signin">Sign in</button></p>
+          </form>
+        </div>
+        <div class="form-pane signin-pane">
+          <form id="signinForm">
+            <div class="eyebrow">GOOD TO SEE YOU AGAIN</div>
+            <h1>Welcome back<span class="dot">.</span></h1>
+            <p class="subtitle">Sign in and pick up where you left off.</p>
+            <label for="signinEmail">Email address</label>
+            <input id="signinEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <div class="label-row"><label for="signinPassword">Password</label><button class="text-btn" type="button" id="forgotBtn">Forgot password?</button></div>
+            <div class="password-field"><input id="signinPassword" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required /><button class="show-password" type="button" data-for="signinPassword" aria-label="Show password">Show</button></div>
+            <button class="primary-btn" type="submit">Sign in <span>↗</span></button>
+            <p class="mobile-switch">New here? <button type="button" data-switch="signup">Create account</button></p>
+          </form>
+        </div>
+        <div class="overlay-shell" aria-hidden="true">
+          <div class="overlay-track">
+            <div class="overlay-content overlay-left">
+              <div class="orb orb-one"></div><div class="sparkle">✳</div>
+              <div class="overlay-text"><span class="pill">✦ YOUR NEXT CHAPTER</span><h2>Already part<br />of the crew?</h2><p>Your creative space is waiting. Jump right back in.</p><button type="button" class="outline-btn" data-switch="signin" tabindex="-1">Sign in <span>→</span></button></div>
+              <span class="panel-footer">DESIGNED TO INSPIRE ✦</span>
+            </div>
+            <div class="overlay-content overlay-right">
+              <div class="orb orb-two"></div><div class="sparkle">✳</div>
+              <div class="overlay-text"><span class="pill">✦ SOMETHING GOOD STARTS HERE</span><h2>New around<br />here?</h2><p>Join the space where great ideas come to life.</p><button type="button" class="outline-btn" data-switch="signup">Create account <span>→</span></button></div>
+              <span class="panel-footer">MADE FOR THE CURIOUS ✦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="bottom-note">Made with intention. Built for what's next. ✦</p>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
